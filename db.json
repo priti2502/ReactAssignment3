@@ -26,6 +26,16 @@
       "id": "1",
       "title": "Inceptions movie",
       "posterPath": "assets/Inception.jpg"
+    },
+    {
+      "id": "2",
+      "title": "The Matrix Movie",
+      "posterPath": "assets/matrix.jpg"
+    },
+    {
+      "id": "3",
+      "title": "Interstellar",
+      "posterPath": "assets/Interstellar.jpg"
     }
   ]
 }

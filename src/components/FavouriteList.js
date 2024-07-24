@@ -1,30 +1,8 @@
-// src/components/FavouritesList.js
+
 import React, { useEffect, useState } from 'react';
 
-function FavouriteList() {
-  const [favourites, setFavourites] = useState([]);
-
-  useEffect(() => {
-    fetchFavourites();
-  }, []);
-
-  const fetchFavourites = () => {
-    fetch('http://localhost:3000/favourites')
-      .then(response => response.json())
-      .then(data => setFavourites(data))
-      .catch(error => console.error('Error fetching favourites:', error));
-  };
-
-  const removeFavourite = (id) => {
-    fetch(`http://localhost:3000/favourites/${id}`, {
-      method: 'DELETE',
-    })
-      .then(() => {
-        alert("movie removed successfully")
-        setFavourites(favourites.filter(favourite => favourite.id !== id));
-      })
-      .catch(error => console.error('Error removing favourite:', error));
-  };
+function FavouriteList({favourites,removeFavourite}) {
+  
 
   return (
     <ul id="favouritesList" className="list-group ">

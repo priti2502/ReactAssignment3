@@ -1,4 +1,3 @@
-// src/components/EditMovieForm.js
 import React, { useState } from 'react';
 
 function EditMovieForm({ movie, onSave, onCancel }) {

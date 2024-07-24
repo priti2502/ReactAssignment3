@@ -1,4 +1,4 @@
-// src/components/MovieItem.js
+
 import React, { useState } from 'react';
 import EditMovieForm from './EditForm';
 
